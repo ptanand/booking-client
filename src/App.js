@@ -11,6 +11,12 @@ import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 
+import CreateBooking from './components/booking/CreateBooking'
+import IndexBooking from './components/booking/IndexBooking'
+import ShowBooking from './components/booking/ShowBooking'
+import UpdateBooking from './components/booking/UpdateBooking'
+
+// DONT DO THIS!import { CreateBooking } from './components/booking/CreateBooking'
 class App extends Component {
   constructor (props) {
     super(props)
@@ -44,8 +50,8 @@ class App extends Component {
 
     return (
       <Fragment>
-	      <Header user={user} />
-	      {msgAlerts.map((msgAlert) => (
+        <Header user={user} />
+        {msgAlerts.map((msgAlert) => (
           <AutoDismissAlert
             key={msgAlert.id}
             heading={msgAlert.heading}
@@ -55,8 +61,8 @@ class App extends Component {
             deleteAlert={this.deleteAlert}
           />
         ))}
-	      <main className='container'>
-	        <Route
+        <main className='container'>
+          <Route
             path='/sign-up'
             render={() => (
               <SignUp msgAlert={this.msgAlert} setUser={this.setUser} />
@@ -85,6 +91,28 @@ class App extends Component {
             render={() => (
               <ChangePassword msgAlert={this.msgAlert} user={user} />
             )}
+          />
+          <AuthenticatedRoute
+            user={user}
+            path='/booking_create'
+            render={() => (
+              <CreateBooking msgAlert={this.msgAlert} user={user} />
+            )}
+          />
+          <AuthenticatedRoute
+            user={user}
+            exact path='/booking/:id/update'
+            render={() => (<UpdateBooking msgAlert={this.msgAlert} user={user} />)}
+          />
+          <AuthenticatedRoute
+            user={user}
+            exact path='/booking/'
+            render={() => (<IndexBooking msgAlert={this.msgAlert} user={user} />)}
+          />
+          <AuthenticatedRoute
+            user={user}
+            exact path='/booking/:id'
+            render={() => <ShowBooking msgAlert={this.msgAlert} user={user} />}
           />
         </main>
       </Fragment>
