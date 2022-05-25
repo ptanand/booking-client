@@ -7,6 +7,8 @@ import { signUpSuccess, signUpFailure } from '../AutoDismissAlert/messages'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
+import Sarvadeo from '../video/sarvadeo.mp4'
+
 class SignUp extends Component {
   constructor (props) {
     super(props)
@@ -53,47 +55,64 @@ render () {
   const { email, password, passwordConfirmation } = this.state
 
   return (
-    <div className='row'>
-      <div className='col-sm-10 col-md-8 mx-auto mt-5'>
-        <h3>Sign Up</h3>
-        <Form onSubmit={this.onSignUp}>
-          <Form.Group controlId='email'>
-            <Form.Label>Email address</Form.Label>
-            <Form.Control
-              required
-              type='email'
-              name='email'
-              value={email}
-              placeholder='Enter email'
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Group controlId='password'>
-            <Form.Label>Password</Form.Label>
-            <Form.Control
-              required
-              name='password'
-              value={password}
-              type='password'
-              placeholder='Password'
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Group controlId='passwordConfirmation'>
-            <Form.Label>Password Confirmation</Form.Label>
-            <Form.Control
-              required
-              name='passwordConfirmation'
-              value={passwordConfirmation}
-              type='password'
-              placeholder='Confirm Password'
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Button className='submit' type='submit'>Sign Up</Button>
-        </Form>
+    <>
+      <video
+        autoPlay
+        style={{
+          position: 'absolute',
+          width: '100%',
+          left: '50%',
+          top: '50%',
+          height: '100%',
+          objectFit: 'cover',
+          transform: 'translate(-50%, -50%)',
+          zIndex: '-1'
+        }}
+      >
+        <source src={Sarvadeo} type='video/mp4' />
+      </video>
+      <div className='row1'>
+        <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+          <h3>Sign Up</h3>
+          <Form onSubmit={this.onSignUp}>
+            <Form.Group controlId='email'>
+              <Form.Label>Email address</Form.Label>
+              <Form.Control
+                required
+                type='email'
+                name='email'
+                value={email}
+                placeholder='Enter email'
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId='password'>
+              <Form.Label>Password</Form.Label>
+              <Form.Control
+                required
+                name='password'
+                value={password}
+                type='password'
+                placeholder='Password'
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId='passwordConfirmation'>
+              <Form.Label>Password Confirmation</Form.Label>
+              <Form.Control
+                required
+                name='passwordConfirmation'
+                value={passwordConfirmation}
+                type='password'
+                placeholder='Confirm Password'
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Button className='submit' type='submit'>Sign Up</Button>
+          </Form>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 }

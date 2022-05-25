@@ -1,5 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
 // main background.
 body{
     background-image: url('./Images/background1.jpg');
@@ -15,15 +16,23 @@ body{
 }
 // Sign up/in/ Change password background.
 .row{
-    background-color: rgba(250, 192, 36, 0.5);
+    background-color: rgba(250, 192, 36, 0.3);
     color: brown;
     border-radius: 20px;
     margin-top: 50px;
     padding-bottom: 40px;
 }
+
+.row1 {
+    background-color: rgba(250, 192, 36, 0.3);
+    color: brown;
+    border-radius: 20px;
+    padding-bottom: 60px;
+
+}
 // make pledge background.
 .create-booking{
-    background-color:rgba(250, 192, 36, 0.5) ;
+    background-color:rgba(250, 192, 36, 0.3) ;
     border-radius: 25px;
     margin-top: 15px;
     text-align: center;
