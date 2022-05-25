@@ -77,7 +77,7 @@ render () {
               onChange={this.handleChange}
             />
           </Form.Group>
-          <Button variant='primary' type='submit'>Submit</Button>
+          <Button className='submit' type='submit'>Sign In</Button>
         </Form>
       </div>
     </div>

@@ -28,7 +28,7 @@ class UpdateBooking extends Component {
       .then(() => {
         msgAlert({
           heading: 'Update',
-          message: 'Update success ',
+          message: 'You can update Pledge  ',
           variant: 'success'
         })
       })
@@ -93,8 +93,8 @@ handleDelete = () => {
 
 render () {
   return (
-
-    <div className='update-box'>
+    <div className='row'>
+      <div className='col-sm-10 col-md-8 mx-auto mt-5'></div>
       <Form onSubmit={this.handleSubmit}>
         <Form.Group controlId='name'>
           <Form.Label>Name</Form.Label>
@@ -129,10 +129,11 @@ render () {
             onChange={this.handleChange}
           />
         </Form.Group>
-        <Button className='submitBt' type='submit'>Update</Button>
+        <Button className='upBt' type='submit'>Update</Button>
+        <Button className='delBt' onClick={this.handleDelete}>Delete</Button>
       </Form>
       <>
-        <Button className='delBt' onClick={this.handleDelete}>Delete</Button>
+
       </>
     </div>
   )

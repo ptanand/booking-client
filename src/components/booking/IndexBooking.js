@@ -59,11 +59,12 @@ class IndexBooking extends Component {
     }
 
     return (
-      <div className='box'>
+
+      <div className='pledge-list'>
         <h3>Pledge List:</h3>
-        <h6>To Update or Delete your Pledge, click on item</h6>
-        <h5>Name / Pledge:</h5>
-        <ol>{bookingJSX}</ol>
+        <h5>To Update or Delete your Pledge, click on item.</h5>
+        <h4 className='list'>Name / Pledge:</h4>
+        <ul className='list'>{bookingJSX}</ul>
       </div>
     )
   }

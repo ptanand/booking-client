@@ -26,15 +26,15 @@ const alwaysOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar bg='warning' variant='danger' expand='md'>
+  <Navbar bg='dark' variant='danger' expand='md'>
     <Navbar.Brand>
-      <Link to='/' style={{ color: '#111', textDecoration: 'none', fontSize: '50px' }}>Sarvadeo Mandir Inc.</Link>
+      <Link to='/' style={{ color: '#A82', textDecoration: 'none', fontSize: '50px', fontFamily: 'Macondo', marginLeft: '20px' }}>Sarvadeo Mandir Inc.</Link>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls='basic-navbar-nav' />
     <Navbar.Collapse id='basic-navbar-nav'>
       <Nav className='ml-auto'>
         {user && (
-          <span className='navbar-text mr-2'>Namaskar, {user.email}</span>
+          <span className='navbar-text mr-2'> www.sarvadeo.com Namaskar, {user.email}</span>
         )}
         {alwaysOptions}
         {user ? authenticatedOptions : unauthenticatedOptions}

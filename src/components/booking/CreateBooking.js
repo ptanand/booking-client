@@ -47,7 +47,8 @@ class CreateBooking extends Component {
     render () {
       // console.log('anand')
       return (
-        <div className='create-booking'>
+        <div className='row'>
+          <div className='col-sm-10 col-md-8 mx-auto mt-5'></div>
           <Form onSubmit={this.handleSubmit}>
             <Form.Group controlId='name'>
               <Form.Label>Name</Form.Label>
@@ -82,11 +83,10 @@ class CreateBooking extends Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Button className='createBt' type='submit'>
-                        Submit
-            </Button>
+            <Button className='submit' type='submit'>Submit</Button>
           </Form>
         </div>
+
       )
     }
 }

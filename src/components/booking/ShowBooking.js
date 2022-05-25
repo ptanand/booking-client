@@ -37,7 +37,7 @@ handleDelete = () => {
   const { match, user, msgAlert, history } = this.props
 
   deleteBooking(match.params.id, user)
-    .then(() => history.push('/bookings/'))
+    .then(() => history.push('/booking/'))
     .then(() => {
       msgAlert({
         heading: 'Successfully Deleted Pledge',
@@ -62,20 +62,21 @@ render () {
   const { name, date, pledge, owner } = this.state.booking
   const { user, match, history } = this.props
   return (
-    <div className='Show-box'>
-      <h4>{name}</h4>
-      <p>Date: {date}</p>
-      <p>{pledge}</p>
+    <div className='your-pledge'>
+      <h3>Name: {name}</h3>
+      <h5>Pledged Date: {date}</h5>
+      <h3>You Pledged {pledge}</h3>
       {user._id === owner && (
         <>
-          <Button
-            className='updateBt'
-            onClick={() => history.push(`/bookings/${match.params.id}/update`)}>
-                        Update
-          </Button>
-          <Button className='delBt' onClick={this.handleDelete}>
-                        Delete
-          </Button>
+          <div>
+            <h5>To Update or Delete your Pledge, click below</h5>
+            <h3>OR</h3>
+            <h5>To see All Pledges click above Show Pledges</h5>
+            <Button
+              className='upBt'onClick={() =>
+                history.push(`/booking/${match.params.id}/update`)}>Update</Button>
+            <Button className='delBt' onClick={this.handleDelete}>Delete</Button>
+          </div>
         </>
       )}
     </div>
