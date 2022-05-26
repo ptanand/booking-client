@@ -1,4 +1,4 @@
-### Booking a Pledge By Anand Maharaj
+# Booking a Pledge By Anand Maharaj
 
 ## Link:
 
@@ -37,49 +37,54 @@
               - Four (4) days.
 
 - What will be the steps in building this application?
-              - Download templates (server and client) from GA.
-              - Build wireframes / ERD
-              - Review planning.
-              - Work on the server template.
-              - Auth Sign up with email, password and password confirmation.
-              - Auth Sign in with email and password.
-              - Auth Sign out when signed in.
-              - Auth Sign up and Sign in must only be available to not signed in 
-                users.
-              - Auth Logout and Change password must only be available to 
-                signed in users.
-              - Ensure all forms must clear after submit success and user 
-                sign-out.
-              - Give feedback to the user after each action's success or failure.
-              - Get images / clips to use on clients template.
-              - Be able to create a pledge.
-              - Be able to update the pledge.
-              - Be able to delete a pledge.
-              - Be able to view single and all pledges.
-              - Give feedback on user actions.
-              - Clear all forms after submit. 
-              - Design.
-              - Git add all.
-              - Git commit.
-              - Git push. 
-              - Git deploy.
+  - Download templates (server and client) from GA.
+  - Build wireframes / ERD
+  - Review planning.
+  - Work on the server template.
+  - Auth Sign up with email, password and password confirmation.
+  - Auth Sign in with email and password.
+  - Auth Sign out when signed in.
+  - Auth Sign up and Sign in must only be available to not signed in 
+    users.
+  - Auth Logout and Change password must only be available to 
+    signed in users.
+  - Ensure all forms must clear after submit success and user 
+    sign-out.
+  - Give feedback to the user after each action's success or failure.
+  - Get images / clips to use on clients template.
+  - Be able to create a pledge.
+  - Be able to update the pledge.
+  - Be able to delete a pledge.
+  - Be able to view single and all pledges.
+  - Give feedback on user actions.
+  - Clear all forms after submit. 
+  - Design.
+  - Git add all.
+  - Git commit.
+  - Git push. 
+  - Git deploy.
+
+## Installation:
+- Fork and Clone repository.
+- Checkout to new branch.
+- Run NPM Install to instal the required dependencies. 
 
 ## Paths and Methods:
 
-# Auth
+### Auth
 - Sign Up (POST) URL + '/sign-up/'
 - Sign In (POST) URL + '/sign-in/'
 - Sign Out (DELETE) URL + '/sign-out/'
 - Change Password (PATCH) URL + '/change-password/'
 
-# Tasks
+### Tasks
 - Create Task (POST) URL + '/booking/'
 - Index Task (GET) URL + '/booking/'
 - Show Task (GET) URL +'/booking/' + :id
 - Update Task (PATCH) URL + '/booking/' + :id
 - Delete Task (DELETE) URL + '/booking/' + :id
 
-## User Stories:
+### User Stories:
 
 - To use this app a person has to ba a registered member.
 - A user must sign up to become a member.
@@ -114,38 +119,38 @@
 
 ## How to use this Application:
 
-# To Sign Up:
+### To Sign Up:
 1. Click on the sign up link at the top of the Nav bar.
 2. Enter an email,
 3. Enter password,
 4. Re-enter password,
 5. Click submit.
 
-# To Sign In:
+### To Sign In:
 1. Enter email,
 3. Enter your password,
 4. Click Sign in.
 
-# Update Password:
+### Update Password:
 1. Click Update Password,
 2. Enter current password,
 3. Enter new password,
 4. Click Update.
 
-# To Make a Pledge:
+### To Make a Pledge:
 1. Click on Make Pledge,
 2. Enter a your name,
 3. Enter date,
 4. Give description of the pledge, 
 5. Click submit.
 
-# To Update Your Pledge:
+### To Update Your Pledge:
 1. Click on show pledges,
 2. Click on your name from the list,
 3. Enter the changes you would like to make on the form field,
 4. Click update.
 
-# To Delete Your Pledge:
+### To Delete Your Pledge:
 1. Click on show pledges,
 2. Click on your name from the list,
 3. Enter the changes you would like to make on the form field,

@@ -51,7 +51,7 @@ class IndexBooking extends Component {
     } else {
       bookingJSX = bookings.map((booking) => (
         <li key={booking._id}>
-          <Link to={`/booking/${booking._id}/update`}>
+          <Link to={`/booking/${booking._id}`}>
             {booking.name}: {booking.pledge}
           </Link>
         </li>

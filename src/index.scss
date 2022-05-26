@@ -16,6 +16,8 @@ body{
 }
 // Sign up/in/ Change password background.
 .row{
+    margin-left: 48%;
+    margin-right: 15%;
     background-color: rgba(250, 192, 36, 0.3);
     color: blue;
     border-radius: 20px;
@@ -24,6 +26,8 @@ body{
 }
 
 .row1 {
+    margin-left: 50%;
+    margin-right: 15%;
     background-color: rgba(250, 192, 36, 0.3);
     color: blue;
     border-radius: 20px;
@@ -45,6 +49,7 @@ body{
     margin-top: 5%;
     background-color:rgba(250, 192, 36, 0.5);
     border-radius: 20px; 
+    color:blue;
     
     
 }
@@ -61,8 +66,12 @@ body{
     margin-bottom: 25px;
     margin-top: 15px;
     padding-bottom: 25px;
-    
-    
+    color: blue;
+  
+}
+
+.bookingJSX{
+    color: brown;
 }
 
 // pledge list h3 & h5 (indexBooking)
@@ -75,6 +84,24 @@ h3,h5{
     color: white;
   
 }
+
+.row2 {
+    margin-left: 48%;
+    margin-right: 15%;
+    background-color: rgba(250, 192, 36, 0.3);
+    color: blue;
+    border-radius: 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.name-pledge{
+    margin-left: 15%;
+    font-size: 20px;
+    text-align: center;
+    color: solid blue;
+}
+
 
 .delBt {
    // delete button.

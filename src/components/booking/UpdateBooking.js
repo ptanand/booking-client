@@ -93,8 +93,9 @@ handleDelete = () => {
 
 render () {
   return (
-    <div className='row'>
+    <div className='row2'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'></div>
+      <Form.Label className='name-pledge'>Only {this.state.name} can Edit/Delete this Pledge. </Form.Label>
       <Form onSubmit={this.handleSubmit}>
         <Form.Group controlId='name'>
           <Form.Label>Name</Form.Label>
@@ -124,17 +125,17 @@ render () {
             required
             type='text'
             name='pledge'
-            value={this.state.description}
+            value={this.state.pledge}
             placeholder='Update Booking Pledge'
             onChange={this.handleChange}
           />
         </Form.Group>
-        <Button className='upBt' type='submit'>Update</Button>
-        <Button className='delBt' onClick={this.handleDelete}>Delete</Button>
+        <Button className='delBt' onClick={this.handleDelete}>Delete
+        </Button>
+        <Button className='submit' type='submit'>Save/Update
+        </Button>
       </Form>
-      <>
-
-      </>
+      <></>
     </div>
   )
 }

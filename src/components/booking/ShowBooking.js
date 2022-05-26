@@ -19,7 +19,7 @@ class ShowBooking extends Component {
       .then((res) => this.setState({ booking: res.data.booking }))
       .then(() => {
         msgAlert({
-          heading: 'Your pledge',
+          heading: 'Single view pledge',
           message: 'Pledges available',
           variant: 'success'
         })
