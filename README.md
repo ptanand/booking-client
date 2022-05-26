@@ -89,6 +89,18 @@
 - Update Task (PATCH) URL + '/booking/' + :id
 - Delete Task (DELETE) URL + '/booking/' + :id
 
+## API Routes
+
+----------------------------------------------------------------
+| HTTP Method   | URL Path       | Action           | CRUD     |
+|---------------|----------------|------------------|----------|
+| GET           | /booking       | index or list    | `R`ead   |
+| GET           | /booking/`:id` | show or retrieve | `R`ead   |
+| POST          | /booking       | create           | `C`reate |
+| PATCH         | /booking/`:id` | update           | `U`pdate |
+| DELETE        | /booking/`:id` | destroy          | `D`elete |
+----------------------------------------------------------------
+
 ### User Stories:
 
 - To use this app a person has to ba a registered member.
