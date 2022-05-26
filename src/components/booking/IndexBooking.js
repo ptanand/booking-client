@@ -62,7 +62,7 @@ class IndexBooking extends Component {
 
       <div className='pledge-list'>
         <h3>Pledge List:</h3>
-        <h5>To Update or Delete your Pledge, click on item.</h5>
+        <h5>To Update or Cancel your Pledge, click on your name.</h5>
         <h4 className='list'>Name / Pledge:</h4>
         <ul className='list'>{bookingJSX}</ul>
       </div>

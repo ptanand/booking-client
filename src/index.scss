@@ -17,7 +17,7 @@ body{
 // Sign up/in/ Change password background.
 .row{
     background-color: rgba(250, 192, 36, 0.3);
-    color: brown;
+    color: blue;
     border-radius: 20px;
     margin-top: 50px;
     padding-bottom: 40px;
@@ -25,7 +25,7 @@ body{
 
 .row1 {
     background-color: rgba(250, 192, 36, 0.3);
-    color: brown;
+    color: blue;
     border-radius: 20px;
     padding-bottom: 60px;
 
@@ -36,7 +36,7 @@ body{
     border-radius: 25px;
     margin-top: 15px;
     text-align: center;
-    color: brown;
+    color: blue;
     font-size: 20px;
 }
 // pledge-list (indexBooking)
@@ -46,10 +46,11 @@ body{
     background-color:rgba(250, 192, 36, 0.5);
     border-radius: 20px; 
     
+    
 }
 
 .your-pledge{
-    margin-left: 25%;
+    margin-left: 50%;
     margin-top: 5%;
     background-color:rgba(250, 192, 36, 0.5);
     border-radius: 10px;
@@ -61,11 +62,13 @@ body{
     margin-top: 15px;
     padding-bottom: 25px;
     
+    
 }
 
 // pledge list h3 & h5 (indexBooking)
 h3,h5{
     text-align: center;
+    color: blue;
 }
 .ml-auto{
     font-size: 20px;

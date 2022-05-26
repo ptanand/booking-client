@@ -41,13 +41,13 @@ handleDelete = () => {
     .then(() => {
       msgAlert({
         heading: 'Successfully Deleted Pledge',
-        message: 'Pledge Canceled',
+        message: 'Pledge Deleted',
         variant: 'success'
       })
     })
     .catch((error) => {
       msgAlert({
-        heading: 'Canceled Pledge Failed',
+        heading: 'You can ONLY Delete YOUR OWN Pledge.',
         message: 'Error message: ' + error.message,
         variant: 'danger'
       })

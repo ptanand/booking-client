@@ -6,6 +6,7 @@ import { Link, NavLink } from 'react-router-dom'
 const authenticatedOptions = (
   <Fragment>
     <NavLink to='/booking_create' className='nav-link'>Make Pledge</NavLink>
+    <NavLink to='/booking' className='nav-link'>Show Pledges</NavLink>
     <NavLink to='/change-password' className='nav-link'>Change Password</NavLink>
     <NavLink to='/sign-out' className='nav-link'>Sign Out</NavLink>
   </Fragment>
@@ -21,7 +22,6 @@ const unauthenticatedOptions = (
 const alwaysOptions = (
   <Fragment>
     <NavLink exact to='/' className='nav-link'>Home</NavLink>
-    <NavLink to='/booking' className='nav-link'>Show Pledges</NavLink>
   </Fragment>
 )
 

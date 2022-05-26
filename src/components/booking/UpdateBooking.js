@@ -28,7 +28,7 @@ class UpdateBooking extends Component {
       .then(() => {
         msgAlert({
           heading: 'Update',
-          message: 'You can update Pledge  ',
+          message: 'You can update your Pledge  ',
           variant: 'success'
         })
       })
@@ -84,7 +84,7 @@ handleDelete = () => {
     })
     .catch((error) => {
       msgAlert({
-        heading: 'Canceled Pledge Failed',
+        heading: 'You can ONLY Delete YOUR OWN Pledge.',
         message: 'Error message: ' + error.message,
         variant: 'danger'
       })
